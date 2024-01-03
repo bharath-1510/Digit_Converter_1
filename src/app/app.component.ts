@@ -9,6 +9,7 @@ import { DigitConverter } from './DigitConverter';
 export class AppComponent {
   inpText!: string;
   answer!: string;
+  title = 'Digit to Text Converter';
   convert() {
     const popupElement: any = document.getElementById('popup-1');
     popupElement.classList.toggle('active');
