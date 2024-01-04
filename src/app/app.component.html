@@ -8,7 +8,7 @@
     {{ inpText | digitConverter }}
   </p>
 </section> -->
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
 <section class="convert-section">
   <input
     type="text"
@@ -28,7 +28,7 @@
   <p [hidden]="inpTag.pristine || isNumeric(inpText)">
     Number should be numeric
   </p>
-  <p [hidden]="!isLimit(inpText)">Limit Exceeded</p>
+  <p [hidden]="!isLimit(inpText)">Limit Exceeded or Subseeded</p>
 </section>
 <div class="popup" id="popup-1">
   <div class="overlay"></div>

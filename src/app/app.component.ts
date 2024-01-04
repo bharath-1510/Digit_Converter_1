@@ -18,7 +18,10 @@ export class AppComponent {
     return !isNaN(Number(val));
   };
   isLimit = (val: string): boolean => {
+    if (val === '') return false;
     if (Number(val) >= 10000000) return true;
+    if (Number(val) <= 0) return true;
+
     return false;
   };
   onClose() {
